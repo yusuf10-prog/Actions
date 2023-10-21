@@ -41,8 +41,30 @@ public class C04_KeyboradActions extends TestBase {
 
        Assert.assertTrue(actualSonucYazisi.contains(expectedIcerik));
 
-        bekle(10);
 
+        bekle(2);
 
+        WebElement aramaKutusu1= driver.findElement(By.id("twotabsearchtextbox"));
+        bekle(2);
+        Actions actions1=new Actions(driver);
+
+        bekle(2);
+
+        aramaKutusu1.clear();
+        actions1
+                .click(aramaKutusu1)
+                .keyDown(Keys.SHIFT)
+                .sendKeys("k")
+                .keyUp(Keys.SHIFT)
+                .sendKeys("ulaklık ")
+                .keyDown(Keys.SHIFT)
+                .sendKeys("k")
+                .keyUp(Keys.SHIFT)
+                .sendKeys("ılıf")
+                .sendKeys(Keys.ENTER)
+                        .perform();
+
+        bekle(2);
+        System.out.println("Test Basarali");
     }
 }

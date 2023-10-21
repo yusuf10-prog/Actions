@@ -44,7 +44,5 @@ public class C03_MoveToElement extends TestBase {
 
         WebElement yourListsElementi= driver.findElement(By.xpath("//div[@role='heading']"));
         Assert.assertTrue(yourListsElementi.isDisplayed());
-
-
     }
 }

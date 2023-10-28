@@ -104,13 +104,12 @@ public class C10_ProjedenOrnek extends TestBase {
 
         driver.findElement(By.xpath("(//*[@class='svg-inline--fa fa-key'])[1]")).click();
         bekle(1);
-        WebElement password=driver.findElement(By.xpath("//input[@id='current_password']"));
-        password.click();
-        password.sendKeys("K135298k.k");
+     //   WebElement password=driver.findElement(By.xpath("//input[@id='current_password']"));
+     //   password.sendKeys("K135298k.k");
 
-        WebElement confirmPassword=driver.findElement(By.xpath("(//input[@id='confirm_password'])[1]"));
-        confirmPassword.click();
-        confirmPassword.sendKeys("K135298k.k");
+      //  WebElement confirmPassword=driver.findElement(By.xpath("(//input[@id='confirm_password'])[1]"));
+      //  confirmPassword.click();
+      //  confirmPassword.sendKeys("K135298k.k");
 
         bekle(3);
 

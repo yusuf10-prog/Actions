@@ -69,9 +69,8 @@ public class C10_ProjedenOrnek extends TestBase {
         }
 
 
-
-
-        WebElement result=driver.findElement(By.xpath("//*[@class='text-muted ms-sm-3 pagination-record']"));
+        WebElement result=
+                driver.findElement(By.xpath("//*[@class='text-muted ms-sm-3 pagination-record']"));
 
         System.out.println("sayfanın en altındaki alan :"+result.getText());
 
@@ -87,13 +86,13 @@ public class C10_ProjedenOrnek extends TestBase {
         editButonu.click();
 
         bekle(2);
-        /*
 
-       WebElement combobox = driver.findElement(By.className("//div[@class='iti__flag-container']"));
+
+       //WebElement combobox = driver.findElement(By.className("//div[@class='iti__flag-container']"));
        bekle(2);
 
-       combobox.findElement(By.className("iti__selected-dial-code"));
-         */
+       //combobox.findElement(By.className("iti__selected-dial-code"));
+
         //driver.switchTo().alert().accept();
 
         driver.findElement(By.xpath("//a[@class='btn btn-outline-primary float-end']")).click();
@@ -110,6 +109,12 @@ public class C10_ProjedenOrnek extends TestBase {
       //  WebElement confirmPassword=driver.findElement(By.xpath("(//input[@id='confirm_password'])[1]"));
       //  confirmPassword.click();
       //  confirmPassword.sendKeys("K135298k.k");
+
+      //  WebElement tumList=driver.findElement(By.xpath("//*[@class='iti__selected-flag']"));
+       // Select select1=new Select(tumList);
+
+        //List<WebElement> optionsList=select1.getOptions();
+       // System.out.println(optionsList.size());
 
         bekle(3);
 

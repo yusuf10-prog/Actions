@@ -32,6 +32,7 @@ public class C01_sagClick extends TestBase {
         String expectedAlertYazi="You selected a context menu";
         String actualAlertYazisi=driver.switchTo().alert().getText();
 
+
         Assert.assertEquals(expectedAlertYazi,actualAlertYazisi);
 
 

@@ -29,20 +29,25 @@ public class C03_FileUploadTesti extends TestBase {
         //3.Yuklemek istediginiz dosyayi secelim.
 
         WebElement uploadButtonElementi= driver.findElement(By.xpath("//input[@id='file-upload']"));
+        bekle(3);
         String dinamikDosyaYolu=System.getProperty("user.dir") +
                 "/src/test/java/day11_fileTestleri_Waits/text.txt";
+        bekle(2);
 
         uploadButtonElementi.sendKeys(dinamikDosyaYolu);
 
 
         //4.Upload butonuna basalim.
+        bekle(2);
 
         driver.findElement(By.xpath("//input[@id='file-submit']")).click();
 
         //5.“File Uploaded!” textinin goruntulendigini test edelim.
+        bekle(2);
 
         WebElement fileUpLoadedElemnti=driver.findElement(By.tagName("h3"));
         Assert.assertTrue(fileUpLoadedElemnti.isDisplayed());
+
 
         bekle(5);
 

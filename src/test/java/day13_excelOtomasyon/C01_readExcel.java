@@ -26,12 +26,14 @@ public class C01_readExcel {
         // fiziki excel dosyasinin bir kopyasini olusturmus olduk.
 
         Sheet sheet= workbook.getSheet("Sayfa1");
-        Row row=sheet.getRow(3);
-        Cell cell=row.getCell(3);
-        System.out.println(cell);
+        Row row=sheet.getRow(3); // index
+        Cell cell=row.getCell(3); // index
+
+        System.out.println(cell); //cezayir
 
         //- 1.satirdaki 2.hucreye gidelim ve yazdiralim
         System.out.println(sheet.getRow(0).getCell(1));
+
         // - 1.satirdaki 2.hucreyi bir string degiskene atayalim ve yazdiralim
 
         String istenenData=sheet.getRow(0).getCell(1).toString();

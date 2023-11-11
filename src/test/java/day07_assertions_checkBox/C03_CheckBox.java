@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import utilities.ReusableMethods;
 
+import java.sql.ResultSet;
 import java.time.Duration;
 
 public class C03_CheckBox {
@@ -54,6 +55,7 @@ public class C03_CheckBox {
         if (!checkBox1.isSelected()) {
             checkBox1.click();
         }
+        ReusableMethods.bekle(2);
 
         // d. Checkbox2 seçili değilse onay kutusunu tıklayın
         if (!checkBox2.isSelected()) {

@@ -1,6 +1,5 @@
 package day07_assertions_checkBox;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
@@ -25,7 +24,6 @@ public class C02_Assertions {
 
     @BeforeClass
     public static void setup(){
-        WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

@@ -1,6 +1,5 @@
 package day07_assertions_checkBox;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.checkerframework.checker.units.qual.A;
 import org.junit.*;
 import org.openqa.selenium.By;
@@ -17,8 +16,6 @@ public class C01_Assertions {
 
     @BeforeClass
     public static void setup(){
-
-        WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

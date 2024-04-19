@@ -1,6 +1,5 @@
 package day09_iframe_cokluWindows;
 
-import org.bouncycastle.math.ec.custom.sec.SecT113Field;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;

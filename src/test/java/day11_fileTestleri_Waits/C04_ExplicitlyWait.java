@@ -1,6 +1,5 @@
 package day11_fileTestleri_Waits;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
@@ -19,7 +18,6 @@ public class C04_ExplicitlyWait {
     public void test01(){
 
         //1. WebDriver ayarlarini implicitlyWait kullanmadan yapin
-        WebDriverManager.chromedriver().setup();
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));

@@ -1,6 +1,5 @@
 package day06_notations_assertions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -35,7 +34,6 @@ public class C02_BeforeAfterNotasyonlari {
 
     @Before
     public void setup(){
-        WebDriverManager.chromedriver().setup();
         driver=new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));

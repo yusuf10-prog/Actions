@@ -1,11 +1,13 @@
 package day05_JUnitFramework;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import utilities.ReusableMethods;
 
 import java.awt.event.KeyEvent;
@@ -14,7 +16,6 @@ import java.util.List;
 
 public class C01_MavenIlkTest {
     public static void main(String[] args) {
-        WebDriverManager.chromedriver().setup();
 
         /*
             13.satiri yazmamiz mecburi degildir.
@@ -25,7 +26,7 @@ public class C01_MavenIlkTest {
          */
         WebDriver driver=new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 
         driver.get("https://www.amazon.com");

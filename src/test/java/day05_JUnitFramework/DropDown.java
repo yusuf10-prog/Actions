@@ -39,7 +39,6 @@ public class DropDown {
 
         driver.findElement(By.xpath("//*[@id='pay_bills_tab']")).click();
 
-        //driver.findElement(By.xpath("//*[@class='ui-state-default ui-corner-top ui-tabs-selected ui-state-active']")).click();
 
         driver.findElement(By.partialLinkText("Purchase Foreign Currency")).click();
         WebElement selectButton= driver.findElement(By.xpath("//select[@id='pc_currency']"));

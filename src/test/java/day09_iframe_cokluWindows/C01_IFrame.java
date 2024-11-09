@@ -40,8 +40,6 @@ public class C01_IFrame extends TestBase {
              Eger testimizde iframe disindan element kullanmamiz gerekirse
              once iframe'den disari cikmamiz lazım.
 
-
-
          */
         WebElement iframe= driver.findElement(By.xpath("//*[@id='mce_0_ifr']"));
         driver.switchTo().frame(iframe);

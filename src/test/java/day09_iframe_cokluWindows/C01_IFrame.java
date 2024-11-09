@@ -12,7 +12,7 @@ public class C01_IFrame extends TestBase {
 
         //1 ) https://the-internet.herokuapp.com/iframe adersine gidin.
 
-        driver.get("https://the-internet.herokuapp.com/iframe");
+       driver.get("https://the-internet.herokuapp.com/iframe");
 
         // 2) Bir method olusturun : iframeTest
 
